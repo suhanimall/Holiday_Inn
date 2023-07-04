@@ -4,7 +4,7 @@ import "./featured.css"
 const Featured = () => {
 
     //for returning city name with no. of hotel in the city
-    const { data, loading, error } = useFetch("https://holiday-backend-tj0d.onrender.com/hotels/countByCity?cities=bhopal,indore,pune")
+    const { data, loading, error } = useFetch("https://holiday-backend-tj0d.onrender.com/api/hotels/countByCity?cities=bhopal,indore,pune")
 
     return (
         <div className="featured">
