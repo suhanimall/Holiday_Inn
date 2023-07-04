@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom"
 
 const Reserve = ({ setOpen, hotelId }) => {
 
-    const { data, loading, error } = useFetch(`https://holiday-backend-tj0d.onrender.com/hotels/room/${hotelId}`)
+    const { data, loading, error } = useFetch(`/hotels/room/${hotelId}`)
 
     //for knowing unavailable dates
     const { dates } = useContext(SearchContext);
@@ -54,7 +54,7 @@ const Reserve = ({ setOpen, hotelId }) => {
     const handleClick = async () => {
         try {
             await Promise.all(selectedRooms.map(roomId => {
-                const res = axios.put(`https://holiday-backend-tj0d.onrender.com/rooms/availability/${roomId}`, { dates: alldates });
+                const res = axios.put(`/rooms/availability/${roomId}`, { dates: alldates });
                 return res.data;
             }));
             setOpen(false)
