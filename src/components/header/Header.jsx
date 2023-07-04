@@ -59,7 +59,7 @@ const Header = ({ type }) => {
         //dispatch these payload data to all pages
         dispatch({ type: "NEW_SEARCH", payload: { destination, dates, options } });
 
-        navigate("https://holiday-backend-tj0d.onrender.com/hotels", { state: { destination, dates, options } });
+        navigate("/hotels", { state: { destination, dates, options } });
     }
 
     return (
