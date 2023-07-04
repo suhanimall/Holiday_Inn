@@ -19,7 +19,7 @@ const List = () => {
     const [min, setMin] = useState(undefined)
     const [max, setMax] = useState(undefined)
 
-    const { data, loading, error, reFetch } = useFetch(`/hotels?city=${destination}&min=${min || 500}&max=${max || 50000}`)
+    const { data, loading, error, reFetch } = useFetch(`https://holiday-backend-tj0d.onrender.com/api/hotels?city=${destination}&min=${min || 500}&max=${max || 50000}`)
 
     const handleClick = () => {
         reFetch();
