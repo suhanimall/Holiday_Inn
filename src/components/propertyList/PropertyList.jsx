@@ -4,7 +4,7 @@ import "./propertyList.css"
 const PropertyList = () => {
 
     //data for displaying different types of hotel count
-    const { data, loading, error } = useFetch("https://holiday-backend-tj0d.onrender.com/hotels/countByType");
+    const { data, loading, error } = useFetch("/hotels/countByType");
 
     //array of images
     const images = [
