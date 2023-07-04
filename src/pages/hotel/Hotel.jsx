@@ -29,7 +29,7 @@ const Hotel = () => {
     //for reserving a hotel room
     const [openModal, setOpenModal] = useState(false)
 
-    const { data, loading, error } = useFetch(`/hotels/find/${id}`)
+    const { data, loading, error } = useFetch(`https://holiday-backend-tj0d.onrender.com/api/hotels/find/${id}`)
 
     //to check how many night user wants to stay
     const { dates, options } = useContext(SearchContext)
