@@ -2,7 +2,7 @@ import "./featuredProperties.css"
 import useFetch from "../../hooks/useFetch";
 const FeaturedProperties = () => {
 
-    const { data, loading, error } = useFetch("/hotels?featured=true");
+    const { data, loading, error } = useFetch("https://holiday-backend-tj0d.onrender.com/api/hotels?featured=true");
 
     return (
         <div className="fp">
