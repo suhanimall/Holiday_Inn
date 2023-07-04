@@ -45,5 +45,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://holiday-backend-tj0d.onrender.com"
+  "proxy": "https://holiday-backend-tj0d.onrender.com/api/"
 }
